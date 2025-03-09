@@ -5,11 +5,13 @@ const baseUrl = import.meta.env.BASE_URL;
 
 <template>
   <header>
-    <div class="flex-row">
-      <img alt="Joel McCandless Logo" class="logo" src="@/assets/logo.png" height="40px"/>
-      <h1>Joel McCandless</h1>
-    </div>
-      <nav>
+    <RouterLink to="/">
+      <div class="flex-row logo">
+        <img alt="Joel McCandless Logo" class="logo" src="@/assets/logo.png" height="40px"/>
+        <h1>Joel McCandless</h1>
+      </div>
+    </RouterLink>
+    <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/projects">Projects</RouterLink>
       <RouterLink to="/research">Research</RouterLink>
@@ -132,5 +134,10 @@ footer p {
 b {
   font-weight: 400;
   font-size: large;
+}
+
+.logo {
+  cursor: default;
+  color: black;
 }
 </style>
