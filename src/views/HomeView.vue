@@ -23,6 +23,13 @@
         </p>
       </div>
     </div>
+    <div class="flex-row down-arrow">
+      `<div class="bounce-fade">
+        <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 9L12 15L18 9" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -43,7 +50,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     gap: 20px;
-    margin: 60px auto;
+    margin: 60px 0 0 0;
     max-width: 1000px;
   }
 
@@ -56,4 +63,24 @@
     font-size: medium;
     margin-bottom: 10px;
   }
+
+  .down-arrow {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  @keyframes bounce-fade {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(20px);
+    opacity: 1;
+  }
+}
+
+.bounce-fade {
+  animation: bounce-fade 2s infinite ease-in-out;
+}
 </style>
