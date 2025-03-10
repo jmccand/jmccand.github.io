@@ -6,7 +6,7 @@ const baseUrl = import.meta.env.BASE_URL;
 <template>
   <header>
     <RouterLink to="/">
-      <div class="flex-row logo">
+      <div class="flex-row nametag">
         <img alt="Joel McCandless Logo" class="logo" src="@/assets/logo.png" height="40px"/>
         <h1>Joel McCandless</h1>
       </div>
@@ -136,8 +136,7 @@ b {
   font-size: large;
 }
 
-.logo {
-  cursor: default;
+.nametag {
   color: black;
 }
 </style>
