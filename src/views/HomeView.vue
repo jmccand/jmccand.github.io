@@ -30,6 +30,12 @@
         </svg>
       </div>
     </div>
+    <div class="flex-row">
+      <div class="mission">
+        <h1>Mission Statement</h1>
+        I will maintain a boundless curiosity for learning by embracing the excitement found in exploration. I will acquire both a breadth and depth of skills and unite fields in novel ways. I will maintain a standard for myself which builds self-esteem and pride in my accomplishments. I will give off gratitude for life and form friendships with those around me in an effort to grow together.
+      </div>
+    </div>
   </main>
 </template>
 
@@ -50,7 +56,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     gap: 20px;
-    margin: 60px 0 0 0;
+    margin: 60px auto 0 auto;
     max-width: 1000px;
   }
 
