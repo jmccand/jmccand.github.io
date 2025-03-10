@@ -1,4 +1,6 @@
 <script setup>
+import homepageData from '@/assets/data/homepage.json';
+import projectsData from '@/assets/data/projects.json';
 </script>
 
 <template>
@@ -24,7 +26,7 @@
       </div>
     </div>
     <div class="flex-row down-arrow">
-      `<div class="bounce-fade">
+      <div class="bounce-fade">
         <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 9L12 15L18 9" stroke="#aaa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -34,6 +36,8 @@
       <div class="mission">
         <h1>Mission Statement</h1>
         I will maintain a boundless curiosity for learning by embracing the excitement found in exploration. I will acquire both a breadth and depth of skills and unite fields in novel ways. I will maintain a standard for myself which builds self-esteem and pride in my accomplishments. I will give off gratitude for life and form friendships with those around me in an effort to grow together.
+      </div>
+      <div class="featured">
       </div>
     </div>
   </main>
@@ -61,7 +65,7 @@
   }
 
   b {
-    font-weight: 700;
+    font-weight: 500;
     font-size: large;
   }
 
@@ -72,7 +76,23 @@
 
   .down-arrow {
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px auto 40px auto;
+  }
+
+  .mission {
+    padding: 20px;
+    margin: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .featured {
+    padding: 20px;
+    margin: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   @keyframes bounce-fade {
