@@ -112,6 +112,7 @@ nav a.router-link-exact-active {
   max-width: 1200px;
   margin: 0 auto;
   flex-grow: 1;
+  width: 100%;
 }
 
 footer {

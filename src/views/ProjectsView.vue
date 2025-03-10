@@ -28,6 +28,7 @@ const getImageUrl = (imageName) => {
 
     .project-grid {
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
         margin: 20px auto;
