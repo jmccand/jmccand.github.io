@@ -13,8 +13,9 @@ const baseUrl = import.meta.env.BASE_URL;
     </RouterLink>
     <nav>
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/projects">Projects</RouterLink>
+      <RouterLink to="/experience">Experience</RouterLink>
       <RouterLink to="/research">Research</RouterLink>
+      <RouterLink to="/projects">Projects</RouterLink>
       <RouterLink to="/groups">Groups</RouterLink>
     </nav>
   </header>
