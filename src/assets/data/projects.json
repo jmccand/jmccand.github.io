@@ -26,10 +26,19 @@
 		"name" : "CourseMap",
 		"versions" : [
 			{
-				"start" : "8/23",
+				"start" : "1/24",
 				"end" : "NOW",
-				"goal" : "Crawl the RPI course catalog and display course progressions in an interactive map!",
-				"details" : "I use two programs to reach the goal: one web crawls the RPI course catalog and parses the course information to create a database while the second creates and displays a graphical representation of the database. In the crawling step, I use Python's requests and beautifulsoup4 libraries to crawl RPI's course catalog, regular expressions to extract the prerequisites for each course, and pickle to store the dictionary of Course objects. To avoid unnecessarily crawling each page multiple times, I cache the original HTML from every page. For graphical visualization, I write a DOT language file and use graphviz's twopi layout engine to display courses in a radial web graph. Currently, I’m working on using an interactive mapping software such as Rhumbl to display the courses in a easy-to-use interface. I intend to add this interactive map to RPI’s Open Source QUACs project, which is already a popular website for students to plan their courses.",
+				"goal" : "Use existing Open Source data and display it in an interactive graph!",
+				"details" : "CourseMap seeks to make planning your four years of college easier. Have a high level course you want to take? CourseMap will tell you what you need to take leading up to it. It will also report statistics about the departments you span and what is required from your major. Currently being developed using CytoScape.js and Vue.js.",
+				"images" : ["cytoscape.png"],
+				"tags" : ["web app", "graph viz", "data structures", "d3.js"],
+				"more" : []
+			},
+			{
+				"start" : "8/23",
+				"end" : "1/24",
+				"goal" : "Crawl the RPI course catalog and display course progressions!",
+				"details" : "Web crawls and stores course information from the RPI catalog, caching information to minimize redundant network requests. Parses information using regex and displays it in a DOT-defined graph.",
 				"images" : ["cs_graph.png"],
 				"tags" : ["web crawl", "graph viz", "data structures", "regular expressions", "caching"],
 				"more" : [["GitHub", "https://github.com/jmccand/crawl-classes"]]
@@ -41,12 +50,21 @@
 		"versions" : [
 			{
 				"start" : "1/24",
-				"end" : "NOW",
+				"end" : "12/24",
 				"goal" : "Develop kits and resources for students to pursue the Wumpus Challenge!",
 				"details" : "A professor from the Philosophy department was using LEGO Mindstorms for his Wumpus Challenge project, but Mindstorms was discontinued in 2022. After my partner and I solved the Wumpus Challenge using an Arduino (see project in 2023), the professor asked us to develop a kit to enable students to tackle the Wumpus challenge. I had taken a Mechatronics course with another professor in the Engineering department, who made Arduino kits for his course. I led 2 other students in designing a kit with the Electrical Engineering professor which would meet the needs of the Philosophy professor. We made changes to our previous solution to the Wumpus challenge (2023) by designing a Printed Circuit Board (PCB) for the infrared sensors, adding screw holes for the ball caster wheel in front, and rerouting pins to avoid external wiring. This project involved some soldering, Printed Circuit Board design, and the hardware and software of Arduino microcontrollers. After several iterations, we made a successful design which students will use in the Fall 2024 semester.",
 				"images" : ["minseg_topview.jpeg", "minseg_parts.jpeg", "minseg_wheels.jpeg"],
 				"tags" : [],
 				"more" : [["GitHub", "https://github.com/Bram-Hub/NanoNav"], ["Docs", "https://bram-hub.github.io/NanoNav/"]]
+			},
+			{
+				"start" : "11/23",
+				"end" : "12/23",
+				"goal" : "Assemble and program a robot to solve the Wumpus Challenge!",
+				"details" : "My partner and I adapted the Rensselaer MinSeg Motor Kit and programmed an Arduino Nano 33 IoT using ArduinoC++ to solve the Wumpus Challenge. Some notable functionality from our project includes reading motor encoders and implementing a basic PID loop to reach target motor positions, creating and maintaining a Bluetooth Light connection between the Arduino and a phone, and connecting and reading infrared sensors for line detection. Additionally, we developed a lightweight algorithm which stores known information about the board and makes logical deductions from it to solve the puzzle. We also made a website using Vue.js with Nuxt and hosted on Amazon Web Services Amplify to document our meetings and results.",
+				"images" : ["nanobot.png"],
+				"tags" : ["robotics", "c++", "wiring", "web dev", "collaboration"],
+				"more" : [["GitHub", "https://github.com/ErikUmble/Wumpus-robot"], ["Site", "https://wumpus.erikumble.com/design"]]
 			}
 		]
 	},
@@ -61,20 +79,6 @@
 				"images" : ["shock_absorber_JM.jpeg", "shock_absorber_RPI.jpeg", "shock_absorber_racket.jpeg"],
 				"tags" : [],
 				"more" : []
-			}
-		]
-	},
-	{
-		"name" : "Cognitive Robotics: Wumpus Challenge",
-		"versions" : [
-			{
-				"start" : "11/23",
-				"end" : "12/23",
-				"goal" : "Assemble and program a robot to solve the Wumpus Challenge!",
-				"details" : "My partner and I adapted the Rensselaer MinSeg Motor Kit and programmed an Arduino Nano 33 IoT using ArduinoC++ to solve the Wumpus Challenge. Some notable functionality from our project includes reading motor encoders and implementing a basic PID loop to reach target motor positions, creating and maintaining a Bluetooth Light connection between the Arduino and a phone, and connecting and reading infrared sensors for line detection. Additionally, we developed a lightweight algorithm which stores known information about the board and makes logical deductions from it to solve the puzzle. We also made a website using Vue.js with Nuxt and hosted on Amazon Web Services Amplify to document our meetings and results.",
-				"images" : ["nanobot.png"],
-				"tags" : ["robotics", "c++", "wiring", "web dev", "collaboration"],
-				"more" : [["GitHub", "https://github.com/ErikUmble/Wumpus-robot"], ["Site", "https://wumpus.erikumble.com/design"]]
 			}
 		]
 	},

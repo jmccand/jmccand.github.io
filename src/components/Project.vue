@@ -27,7 +27,7 @@ const getImageUrl = (imageName) => {
                     <span v-if="projectLine.versions.length > 1" class='version'>{{ projectLine.versions.length > 1 ? `v${projectLine.versions.length}` : '' }}</span>
                 </p>
                 <p v-if="isExpanded">{{ projectLine.versions[0].details }}</p>
-                <div class="links">
+                <div class="links" :class="{ expanded: isExpanded }">
                     <a v-for="link in projectLine.versions[0].more" :href="link[1]" :key="link[0]" target="_blank">{{ link[0] }}</a>
                 </div>
             </div>
@@ -60,7 +60,6 @@ const getImageUrl = (imageName) => {
         justify-content: center;
         width: 100%;
         margin: 20px auto;
-        gap: 20px;
         padding: 0;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -123,6 +122,10 @@ const getImageUrl = (imageName) => {
         margin-top: 20px;
     }
 
+    .links.expanded {
+        margin-top: 0;
+    }
+
     .version {
         font-size: small;
         color: var(--logo-blue);
@@ -160,8 +163,8 @@ const getImageUrl = (imageName) => {
     }
 
     .earlier-image {
-        max-width: 100%;
-        max-height: 40px;
+        max-width: 60px;
+        max-height: 60px;
         height: auto;
         border-radius: 5px;
     }
