@@ -8,7 +8,7 @@ const projects = ref(projectsData);
 <template>
     <h1>My Projects</h1>
     <div class="project-grid">
-        <Project v-for="project in projects" :key="project.name" :project="project"/>
+        <Project v-for="projectLine in projects" :key="projectLine.name" :projectLine="projectLine"/>
     </div>
 </template>
 
@@ -24,7 +24,7 @@ const projects = ref(projectsData);
     .project-grid {
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 20px;
         margin: 20px auto;
         max-width: 1000px;
