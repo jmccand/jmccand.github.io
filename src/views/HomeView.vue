@@ -24,6 +24,10 @@ const getImageUrl = (feature) => {
   return new URL(`../assets/images/${feature[0]}/${feature[2]}`, import.meta.url).href
 }
 
+const scrollToMission = () => {
+  document.getElementById('mission').scrollIntoView({ behavior: 'smooth' });
+}
+
 </script>
 
 <template>
@@ -48,12 +52,12 @@ const getImageUrl = (feature) => {
         </p>
       </div>
     </div>
-    <div class="flex-row down-arrow">
+    <div class="flex-row down-arrow" @click="scrollToMission">
       <div class="bounce-fade">
         <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 256 256"><path fill="#aaa" d="m216.49 104.49l-80 80a12 12 0 0 1-17 0l-80-80a12 12 0 0 1 17-17L128 159l71.51-71.52a12 12 0 0 1 17 17Z"/></svg>
       </div>
     </div>
-    <div class="flex-row mission-featured">
+    <div class="flex-row mission-featured" id="mission">
       <div class="mission">
         <h1>Mission Statement</h1>
         <div class="mission-statement">

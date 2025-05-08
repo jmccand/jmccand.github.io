@@ -34,6 +34,10 @@ const router = createRouter({
       component: GroupsView,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0, behavior: 'auto' };
+  }
 })
 
 export default router
