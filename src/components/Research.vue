@@ -19,8 +19,8 @@ const getImageUrl = (imageName) => {
             <div class="title">
                 <b>{{ researchLine.name }}</b>
                 <div class="source">
-                {{ researchLine.source }}
-            </div>
+                    {{ researchLine.source }}
+                </div>
             </div>
             <img :src="getImageUrl(researchLine.images[0])" alt="research Image" class="research-image"/>
             <div class="links">

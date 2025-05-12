@@ -1,37 +1,38 @@
 [
     {
-	"name" : "RPISEC Cybersecurity",
-	"start" : "9/23",
-	"end" : "NOW",
-	"details" : "",
-	"images" : [["rpisec_logo.png", "Our logo."]]
+		"name" : "RPISEC Cybersecurity",
+		"start" : "9/23",
+		"end" : "NOW",
+		"details" : "RPISEC is RPI's Cybersecurity team. We focus on offensive security (Red Teaming) through Capture the Flag (CTF) competitions. Beyond competitions, we attend conferences and run workshops for RPI students.",
+		"images" : [["rpisec_group.jpg", "RPISEC's officers in front of the U.S. Capitol Building on a visit to Washington D.C. for ShmooCon 2025."]],
+		"more": [["CTFTime", "https://ctftime.org/team/572"]]
     },
     {
-	"name" : "RPI Mens' Tennis Team",
-	"start" : "8/23",
-	"end" : "NOW",
-	"details" : "",
-	"images" : [["rpi_tennis_2023_2024.jpeg", "The 2023-2024 Fall & Spring team."]]
+		"name" : "RPI Mens' Tennis Team",
+		"start" : "8/23",
+		"end" : "NOW",
+		"details" : "",
+		"images" : [["rpi_tennis_2023_2024.jpeg", ""]]
     },
     {
-	"name" : "2 Bits and A Byte Robotics Team",
-	"start" : "5/19",
-	"end" : "5/23",
-	"details" : "",
-	"images" : [["Christmas_qualifier.png", "The 2 Bits and A Byte Lexington High School Robotics team in 2022 after winning a qualifier for the Massachusetts State Tournament."]]
+		"name" : "2 Bits and A Byte Robotics Team",
+		"start" : "5/19",
+		"end" : "5/23",
+		"details" : "",
+		"images" : [["Christmas_qualifier.png", ""]]
     },
     {
-	"name" : "Lexington High School Boys' Tennis Team",
-	"start" : "3/20",
-	"end" : "6/23",
-	"details" : "",
-	"images" : [["tennis_caps.jpeg", "The Lexington High School Boys' Varsity Tennis Captains and Coaches after winning the 2023 Massachusetts State Tournament."]]
+		"name" : "Lexington High School Boys' Tennis Team",
+		"start" : "3/20",
+		"end" : "6/23",
+		"details" : "",
+		"images" : [["tennis_caps.jpeg", ""]]
     },
     {
-	"name" : "Lexington Student-Makers Faceshield Manufacturing",
-	"start" : "6/19",
-	"end" : "8/19",
-	"details" : "",
-	"images" : [["face_shields_group.jpeg", "The Lexington High School students who manufactured 2500 face shields for the Lexington public school system over COVID."]]
+		"name" : "Lexington Student-Makers Faceshield Manufacturing",
+		"start" : "6/19",
+		"end" : "8/19",
+		"details" : "",
+		"images" : [["face_shields_group.jpeg", ""]]
     }
 ]
