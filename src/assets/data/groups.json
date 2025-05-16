@@ -3,36 +3,55 @@
 		"name" : "RPISEC Cybersecurity",
 		"start" : "9/23",
 		"end" : "NOW",
-		"details" : "RPISEC is RPI's Cybersecurity team. We focus on offensive security (Red Teaming) through Capture the Flag (CTF) competitions. Beyond competitions, we attend conferences and run workshops for RPI students.",
-		"images" : [["rpisec_group.jpg", "RPISEC's officers in front of the U.S. Capitol Building on a visit to Washington D.C. for ShmooCon 2025."]],
+		"details" : "RPISEC is RPI's Cybersecurity team. We focus on offensive security (Red Teaming) through Capture the Flag (CTF) competitions. Beyond competitions, we attend conferences and run workshops for RPI students. I have been the Secretary of RPISEC since its rebirth in 2023.",
+		"images" : [
+			["rpisec_group.jpg", "RPISEC's officers in front of the U.S. Capitol Building on a visit to Washington D.C. for ShmooCon 2025."],
+			["rpisec_meeting.jpg", "A guest lecture from RPI's Hacker In Residence, Jeremy Blackthorne. RPISEC members, Computer Science graduate students, and Computer Science faculty attended the event."]
+		],
 		"more": [["CTFTime", "https://ctftime.org/team/572"]]
     },
     {
 		"name" : "RPI Mens' Tennis Team",
 		"start" : "8/23",
 		"end" : "NOW",
-		"details" : "",
-		"images" : [["rpi_tennis_2023_2024.jpeg", ""]]
+		"details" : "The RPI Mens' Tennis Team is a passionate group of student-athletes. As a Division III team, we all support each other in class and on the court. We are the defending champions in the Liberty League and reached a all-time-high ranking of number 9 in the country in 2025.",
+		"images" : [
+			["tennis_group.JPG", "The 2024-2025 team gathering in celebration after a doubles win."],
+			["tennis_serve.JPG", "Me preparing to serve."],
+			["tennis_discuss.JPG", "My doubles partner and I discussing strategy between two points."],
+			["rpi_tennis_2023_2024.jpeg", "The 2023-2024 RPI Mens' Tennis Team."]
+		],
+		"more": [["My Profile", "https://rpiathletics.com/sports/mens-tennis/roster/joel-mccandless/19041"], ["Our Record", "https://rpiathletics.com/sports/mens-tennis/schedule"]]
     },
+	{
+		"name": "HackRPI Hackathon Team: Able",
+		"start": "11/24",
+		"end": "11/24",
+		"details": "HackRPI is RPI's annual hackathon. In 2024, my team developed Able, a website that enhances Google Maps for the visually impaired. Extending Google's audial support, Able enables users to record comments and listen to others' comments in their authentic voices, thus preserving the identity of the visually impaired. Able won the \"Best Accessibility Hack\" in 2024.",
+		"images": [["able.jpeg", "My partner, Erik, and I with the certificate and check for winning."]],
+		"more": []
+	},
     {
 		"name" : "2 Bits and A Byte Robotics Team",
 		"start" : "5/19",
 		"end" : "5/23",
-		"details" : "",
-		"images" : [["Christmas_qualifier.png", ""]]
+		"details" : "2 Bits and A Byte is a First Tech Challenge (FTC) high school robotics team. As a passionate public school team that is fully student-led, we've had historic success in states and nationals. Competing in FTC helped foster a love for engineering and interacting with these robots opened my eyes to the potential that robotics has to change the world. I served as the captain of 2 Bits from 2021-2023.",
+		"images" : [["Christmas_qualifier.png", "The team after winning a qualifier in 2023 to secure a spot in states."]],
+		"more": []
     },
     {
 		"name" : "Lexington High School Boys' Tennis Team",
 		"start" : "3/20",
 		"end" : "6/23",
-		"details" : "",
-		"images" : [["tennis_caps.jpeg", ""]]
+		"details" : "While I played junior tennis tournaments individually, my favorite mode of tennis has always been in a team. I would take time out of my schedule every spring to play high school tennis, because I enjoyed playing alongside passionate coaches, teammates and friends. I served as the captain of the tennis team in 2023.",
+		"images" : [["tennis_caps.jpeg", "The captains after winning the state championship in 2023."]],
+		"more": []
     },
     {
 		"name" : "Lexington Student-Makers Faceshield Manufacturing",
 		"start" : "6/19",
 		"end" : "8/19",
-		"details" : "",
-		"images" : [["face_shields_group.jpeg", ""]]
+		"details" : "As COVID-19 cases climbed in 2021, several students at my school felt that we could do more to help our community. We decided to manufacture face shields for frontline workers and teachers as we returned to school. Our group of 8 students delivered 1200 face shields to hospitals in Massachusetts, 700 to our public school system, and 600 to cities across the U.S.",
+		"images" : [["face_shields_group.jpeg", "A social-distanced photo with the Lexington Student-Makers and the school superintendent."]]
     }
 ]

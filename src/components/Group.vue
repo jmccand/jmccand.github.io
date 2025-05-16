@@ -21,10 +21,18 @@ const getImageUrl = (imageName) => {
             <div class="title">
                 <b>{{ groupLine.name }}</b>
             </div>
-            <div class="image-caption">
-                <img :src="getImageUrl(groupLine.images[imageIndex][0])" alt="Group Image" class="group-image"/>
-                <div class="caption">
-                    {{ groupLine.images[imageIndex][1] }}
+            <div class="image-arrows">
+                <div class="group-arrow-container">
+                    <svg v-if="imageIndex > 0" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256" @click="imageIndex--"><path fill="#aaa" d="M168.49 199.51a12 12 0 0 1-17 17l-80-80a12 12 0 0 1 0-17l80-80a12 12 0 0 1 17 17L97 128Z"></path></svg>
+                </div>
+                <div class="image-caption">
+                    <img :src="getImageUrl(groupLine.images[imageIndex][0])" alt="Group Image" class="group-image"/>
+                    <div class="caption">
+                        {{ groupLine.images[imageIndex][1] }}
+                    </div>
+                </div>
+                <div class="group-arrow-container">
+                    <svg v-if="imageIndex < groupLine.images.length - 1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256" @click="imageIndex++"><path fill="#aaa" d="m184.49 136.49l-80 80a12 12 0 0 1-17-17L159 128L87.51 56.49a12 12 0 1 1 17-17l80 80a12 12 0 0 1-.02 17"></path></svg>
                 </div>
             </div>
             <div class="body">
@@ -66,6 +74,15 @@ const getImageUrl = (imageName) => {
         padding-top: 5px;
     }
 
+    .image-arrows {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 10px;
+        height: 400px;
+    }
+
     .image-caption {
         width: 80%;
         display: flex;
@@ -95,5 +112,12 @@ const getImageUrl = (imageName) => {
     .links {
         display: flex;
         gap: 20px;
+    }
+
+    .group-arrow-container {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        animation: fade 2s infinite ease-in-out;
     }
 </style>
