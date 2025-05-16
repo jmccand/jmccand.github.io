@@ -2,6 +2,7 @@
 import homepageData from '@/assets/data/homepage.json';
 import projectsData from '@/assets/data/projects.json';
 import researchData from '@/assets/data/research.json';
+import QuotesGraph from '@/components/QuotesGraph.vue';
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router'
 
@@ -13,7 +14,6 @@ researchData.forEach((research) => {
   }
 });
 projectsData.forEach((project) => {
-  console.log(project);
   if (featuredTitles.includes(project.name)) {
     features.push(["projects", project.name, project.versions[0].images[0]]);
   }
@@ -84,6 +84,13 @@ const scrollToMission = () => {
           <svg v-if="featureIndex < features.length - 1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256" @click="featureIndex++"><path fill="#aaa" d="m184.49 136.49l-80 80a12 12 0 0 1-17-17L159 128L87.51 56.49a12 12 0 1 1 17-17l80 80a12 12 0 0 1-.02 17"></path></svg>
         </div>
       </div>
+    </div>
+    <div class="quotes">
+      <h1>Quotes Wall</h1>
+      <p>
+          "I love finding the bits of catchy wisdom contained in quotes." - Joel McCandless
+      </p>
+      <QuotesGraph />
     </div>
   </main>
 </template>
@@ -226,5 +233,11 @@ const scrollToMission = () => {
   max-height: 100%;
   max-width: 100%;
   margin: auto;
+}
+
+.quotes {
+  padding: 20px;
+  margin: 0;
+  margin-top: 40px;
 }
 </style>
