@@ -24,7 +24,7 @@ const research = ref(researchData);
         margin: 0 auto;
         padding: 0 20px;
         opacity: 0.5;
-        z-index: -1;
+        z-index: 1;
     }
 
     .spacer {
@@ -32,9 +32,11 @@ const research = ref(researchData);
     }
 
     .blur {
+        position: relative;
         background-color: rgba(255, 255, 255, 0.8);
         padding-top: 20px;
         box-shadow: 0 -5px 4px rgba(255, 255, 255, 0.8);
+        z-index: 2;
     }
 
     h1 {
@@ -52,5 +54,6 @@ const research = ref(researchData);
         gap: 20px;
         margin: 20px auto;
         max-width: 1000px;
+        z-index: 2;
     }
 </style>
