@@ -15,7 +15,7 @@
     </p>
     <h2>Past Experiences</h2>
     <ul>
-        <li><b>Software Engineer</b> at Yankee Trails applying IT and software solutions to modernize shuttle tracking and resource allocation.</li>
+        <li><b>Founder of McCandless Consulting</b> applying software and IT solutions to modernize shuttle tracking and resource allocation.</li>
         <li><b>Software Engineering Intern</b> at XP Health building a full stack framework to integrate barcode scanners into daily operation.</li>
         <li><b>Researcher at RPI</b> implementing a multivariate leader-follower controller to coordinate transportation of heavy loads.</li>
     </ul>
