@@ -26,39 +26,77 @@ onMounted(() => {
             {
                 selector: 'node',
                 style: {
-                    width: 120,
-                    height: 120,
+                    width: 'label',                // let nodes size dynamically with text
+                    height: 'label',
+                    padding: '15px',
+                    shape: 'round-rectangle',      // smoother shape for text boxes
                     label: 'data(label)',
                     'text-valign': 'center',
                     'text-halign': 'center',
-                    'background-color': '#a9d0fc',
-                    color: '#000',
-                    'font-size': '10',
+                    'background-color': '#f0f9ff',
+                    'border-width': 2,
+                    'border-color': '#60a5fa',
+                    'border-opacity': 0.8,
+                    color: '#1f2937',
+                    'font-size': 12,
+                    'font-weight': '500',
                     'text-wrap': 'wrap',
+                    'text-max-width': 100,         // constrain wrapping
+                    'text-outline-width': 1,
+                    'text-outline-color': '#f0f9ff'
+                }
+            },
+            {
+                selector: 'node#center',
+                style: {
+                    width: 80,
+                    height: 80,
+                    shape: 'ellipse',
+                    'background-color': '#2563eb',
+                    'border-color': '#1e3a8a',
+                    'border-width': 3,
+                    'font-size': 14,
+                    'font-weight': '600',
+                    color: '#fff',
+                    label: ''
                 }
             },
             {
                 selector: 'edge',
                 style: {
-                    width: 1.5,
-                    'line-color': '#888'
+                    width: 2,
+                    'line-color': '#93c5fd',
+                    'curve-style': 'bezier',
+                    'target-arrow-shape': 'triangle',
+                    'target-arrow-color': '#93c5fd',
+                    'arrow-scale': 1,
+                    opacity: 0.8
+                }
+            },
+            {
+                selector: 'node:selected',
+                style: {
+                    'border-color': '#f59e0b',
+                    'border-width': 4,
+                    'background-color': '#fffbeb'
+                }
+            },
+            {
+                selector: 'edge:selected',
+                style: {
+                    'line-color': '#f59e0b',
+                    'target-arrow-color': '#f59e0b'
                 }
             }
         ],
         layout: {
             name: 'cola',
             infinite: true,
-            nodeSpacing: 15,
-            edgeLengthVal: 25,
+            nodeSpacing: 40,       // more breathing room
+            edgeLengthVal: 60,     // longer edges
             animate: true,
-            fit: false,
-            boundingBox: {
-                x1: 0,
-                y1: 0,
-                w: 800,
-                h: 800
-            },
-            randomize: true,
+            fit: true,
+            randomize: true
         },
         userZoomingEnabled: false,
         userPanningEnabled: false,
@@ -68,5 +106,5 @@ onMounted(() => {
 </script>
 
 <template>
-    <div ref="container" class="quotes" style="width: 1000px; height: 800px; margin: auto;"></div>
+    <div ref="container" class="quotes" style="width: 1000px; height: 800px; margin: auto; padding: 0;"></div>
 </template>
