@@ -62,7 +62,9 @@ const scrollToMission = () => {
         <h1>Mission Statement</h1>
         <div class="mission-statement">
           <svg class="begin-quote" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M6 6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2zm9 0a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2z" clip-rule="evenodd"/></svg>
-          <div class="mission-body">I will maintain a boundless curiosity for learning by embracing the excitement found in exploration. I will acquire both a breadth and depth of skills and unite fields in novel ways. I will maintain a standard for myself which builds self-esteem and pride in my accomplishments. I will give off gratitude for life and form friendships with those around me in an effort to grow together.</div>
+          <div class="mission-body">
+            I will nurture a boundless curiosity by embracing the joy of exploration and discovery. I will cultivate both breadth and depth of knowledge, uniting diverse fields in creative and meaningful ways. I will hold myself to a high standard that fosters self-respect and pride in my achievements. With gratitude for life, I will build genuine friendships and grow together with those around me.
+          </div>
           <svg class="end-quote" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M6 6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2zm9 0a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2z" clip-rule="evenodd"/></svg>
         </div>
       </div>
