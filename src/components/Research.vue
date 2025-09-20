@@ -115,7 +115,7 @@ const getImageUrl = (imageName) => {
     }
 
     .earlier-link {
-        color: var(--color-text);
+        color: black;
         gap: 0;
         font-size: small;
     }
