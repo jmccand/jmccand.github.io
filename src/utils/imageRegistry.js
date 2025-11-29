@@ -7,7 +7,7 @@ import joelTie from '@/assets/images/headshots/joel-tie.jpg';
 
 // Research
 import robotArm from '@/assets/images/research/robot-arm.png';
-import shubble from '@/assets/images/research/shubble.png';
+import shubble from '@/assets/images/projects/shubble.png';
 
 // Groups
 import rpiTennis from '@/assets/images/groups/rpi_tennis_2023_2024.jpeg';
@@ -26,7 +26,7 @@ const imageRegistry = {
   'headshots/joel-polo.jpg': joelPolo,
   'headshots/joel-tie.jpg': joelTie,
   'research/robot-arm.png': robotArm,
-  'research/shubble.png': shubble,
+  'projects/shubble.png': shubble,
   'groups/rpi_tennis_2023_2024.jpeg': rpiTennis,
   'groups/rpisec_group.jpg': rpisecGroup,
   'logo.png': logo,

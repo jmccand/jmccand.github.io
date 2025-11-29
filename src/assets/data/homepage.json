@@ -20,7 +20,7 @@
             "description": "Researching the verifiability of neural networks in control systems using Verisig, a formal verification tool, to ensure safety and reliability of AI-driven control systems in critical applications."
         },
         {
-            "image": "research/shubble.png",
+            "image": "projects/shubble.png",
             "category": "Open Source",
             "title": "Shubble",
             "description": "Developing a comprehensive shuttle tracking and resource allocation system for the RPI campus with the Rensselaer Center for Open Source, providing real-time shuttle locations and optimized route planning."
