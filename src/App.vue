@@ -14,9 +14,9 @@ const baseUrl = import.meta.env.BASE_URL;
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/experience">Experience</RouterLink>
-      <RouterLink to="/research">Research</RouterLink>
       <RouterLink to="/projects">Projects</RouterLink>
       <RouterLink to="/groups">Groups</RouterLink>
+      <RouterLink to="/blog">Blog</RouterLink>
     </nav>
   </header>
 
@@ -73,8 +73,8 @@ header {
   justify-content: space-between;
   padding: 1rem 2rem;
   background: white;
-  border-bottom: 1px solid #ddd;
-  max-height: 100px;
+  border-bottom: 2px solid var(--gray-200);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 h1 {
@@ -83,32 +83,44 @@ h1 {
   display: flex;
   align-items: center;
   padding-left: 1rem;
+  color: var(--color-heading);
+}
+
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 nav {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   align-items: center;
 }
 
 nav a {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
-  transition: text-decoration 0.2s;
+  color: var(--color-text);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: var(--gray-100);
+  color: var(--primary);
 }
 
 nav a.router-link-exact-active {
-  color: var(--logo-blue);
+  background-color: var(--primary);
+  color: white;
 }
 
 .content {
-  margin-top: 100px;
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -117,11 +129,11 @@ nav a.router-link-exact-active {
 }
 
 footer {
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   justify-content: space-between;
-  background: var(--logo-blue);
-  border-top: 1px solid #ddd;
-  margin-top: 1rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-top: 3px solid var(--secondary);
+  margin-top: 2rem;
 }
 
 footer p {
@@ -130,15 +142,32 @@ footer p {
 }
 
 .icons {
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+.icons a {
+  transition: transform 0.3s ease;
+  padding: 0.5rem;
+  display: inline-flex;
+  border-radius: 8px;
+}
+
+.icons a:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 b {
-  font-weight: 400;
-  font-size: large;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .nametag {
-  color: black;
+  color: var(--color-heading);
+  transition: all 0.3s ease;
+}
+
+.nametag:hover {
+  color: var(--primary);
 }
 </style>

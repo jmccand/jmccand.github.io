@@ -46,78 +46,132 @@ const getImageUrl = (imageName) => {
 </template>
 
 <style scoped>
-    .group-tag {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        max-width: 1000px;
-        transition: transform 0.2s, box-shadow 0.2s;
-        background-color: white;
-    }
+.group-tag {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  background: white;
+  border: 2px solid var(--color-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
 
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        gap: 20px;
-        width: 100%;
-        flex-grow: 1;
-    }
+.group-tag:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border-color: var(--secondary);
+}
 
-    .title {
-        padding-top: 5px;
-    }
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem;
+}
 
-    .image-arrows {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        box-sizing: border-box;
-        padding: 0 10px;
-        height: 400px;
-    }
+.title {
+  padding: 0;
+}
 
-    .image-caption {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        gap: 5px;
-    }
+.title b {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-heading);
+}
 
-    .group-image {
-        max-width: 100%;
-        max-height: 300px;
-        border-radius: 5px;
-        margin: auto;
-        box-sizing: border-box;
-    }
+.image-arrows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--gray-50);
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 350px;
+}
 
-    .caption {
-        font-size: 0.8rem;
-        text-align: center;
-    }
+.image-caption {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
-    b {
-        font-weight: 500;
-        font-size: x-large;
-    }
+.group-image {
+  max-width: 100%;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: contain;
+}
 
-    .links {
-        display: flex;
-        gap: 20px;
-    }
+.caption {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-text-light);
+  font-style: italic;
+  padding: 0 1rem;
+}
 
-    .group-arrow-container {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        animation: fade 2s infinite ease-in-out;
-    }
+.body {
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.links a {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.group-arrow-container {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.group-arrow-container:hover svg {
+  transform: scale(1.2);
+}
+
+.group-arrow-container svg {
+  transition: all 0.3s ease;
+}
+
+.group-arrow-container svg path {
+  fill: var(--primary);
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
 </style>

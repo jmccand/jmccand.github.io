@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ExperienceView from '../views/ExperienceView.vue'
-import ResearchView from '../views/ResearchView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
 import GroupsView from '../views/GroupsView.vue'
+import BlogView from '../views/BlogView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,11 +19,6 @@ const router = createRouter({
       component: ExperienceView,
     },
     {
-      path: '/research',
-      name: 'research',
-      component: ResearchView,
-    },
-    {
       path: '/projects',
       name: 'projects',
       component: ProjectsView,
@@ -32,6 +27,11 @@ const router = createRouter({
       path: '/groups',
       name: 'groups',
       component: GroupsView,
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: BlogView,
     },
   ],
   scrollBehavior(to, from, savedPosition) {

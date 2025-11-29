@@ -212,5 +212,53 @@
 				"more" : []
 			}
 		]
+	},
+	{
+		"name" : "Shubble",
+		"category": "Open Source",
+		"source": "Rensselaer Center for Open Source",
+		"versions" : [
+			{
+				"start" : "4/25",
+				"end" : "NOW",
+				"goal" : "Modernize RPI's shuttle tracking system with real-time resource allocation!",
+				"details" : "Working with the Rensselaer Center for Open Source, I'm developing Shubble - a comprehensive shuttle tracking and resource allocation system for the RPI campus. The project aims to improve how students track campus shuttles in real-time and optimize route planning. This full-stack web application provides live shuttle locations and helps manage transportation resources more efficiently across campus.",
+				"images" : ["shubble.png"],
+				"tags" : ["web app", "open source", "real-time tracking"],
+				"more" : [["GitHub", "https://github.com/wtg/shubble"], ["Site", "https://staging-web-shuttles.rpi.edu/"]]
+			}
+		]
+	},
+	{
+		"name" : "Robot Leader-Follower Control",
+		"category": "Research",
+		"source": "RPI ECSE Department, School of Engineering",
+		"versions" : [
+			{
+				"start" : "1/24",
+				"end" : "5/24",
+				"goal" : "Develop coordinated robot control for heavy load transportation!",
+				"details" : "Research project in the RPI Electrical, Computer, and Systems Engineering Department focused on developing leader-follower control algorithms for coordinated robot systems. The project explored how multiple robots can work together to transport heavy loads efficiently, with applications in warehouse automation and industrial settings.",
+				"images" : ["robot-arm.png"],
+				"tags" : ["robotics", "control systems", "coordination"],
+				"more" : []
+			}
+		]
+	},
+	{
+		"name" : "MinSeg Arduino Kit",
+		"category": "Research",
+		"source": "RPI Cognitive Science Department, School of HASS",
+		"versions" : [
+			{
+				"start" : "1/24",
+				"end" : "12/24",
+				"goal" : "Develop kits and resources for students to pursue the Wumpus Challenge!",
+				"details" : "A professor from the Philosophy department was using LEGO Mindstorms for his Wumpus Challenge project, but Mindstorms was discontinued in 2022. After my partner and I solved the Wumpus Challenge using an Arduino (see Cognitive Robotics for Education project), the professor asked us to develop a kit to enable students to tackle the Wumpus challenge. I had taken a Mechatronics course with another professor in the Engineering department, who made Arduino kits for his course. I led 2 other students in designing a kit with the Electrical Engineering professor which would meet the needs of the Philosophy professor. We made changes to our previous solution to the Wumpus challenge by designing a Printed Circuit Board (PCB) for the infrared sensors, adding screw holes for the ball caster wheel in front, and rerouting pins to avoid external wiring. This project involved some soldering, Printed Circuit Board design, and the hardware and software of Arduino microcontrollers. After several iterations, we made a successful design which students will use in the Fall 2024 semester.",
+				"images" : ["minseg_topview.jpeg", "minseg_parts.jpeg", "minseg_wheels.jpeg"],
+				"tags" : ["robotics", "education", "PCB design", "Arduino"],
+				"more" : [["GitHub", "https://github.com/Bram-Hub/NanoNav"], ["Docs", "https://bram-hub.github.io/NanoNav/"]]
+			}
+		]
 	}
 ]

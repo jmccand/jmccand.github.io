@@ -1,8 +1,48 @@
 {
-    "featured": [
-        "Shubble",
-        "CourseMap",
-        "Cognitive Robotics for Education",
-        "9x9 Tic Tac Toe AI Player"
-    ]
+    "intro": {
+        "name": "Joel McCandless",
+        "subtitle": "CS Masters & CS/Computer Engineering Bachelors at Rensselaer Polytechnic Institute",
+        "portrait": "headshots/joel-polo.jpg",
+        "about": "Hi, I am a CS Masters student studying the computation behind intelligent behavior, including methods of Machine Learning, Computer Vision, and Control Systems. I enjoy taking a multidisciplinary approach to solve complex problems, pursuing ambitious goals to address modern needs.",
+        "mission": "I will nurture a boundless curiosity by embracing the joy of exploration and discovery. I will cultivate both breadth and depth of knowledge, uniting diverse fields in creative and meaningful ways. I will hold myself to a high standard that fosters self-respect and pride in my achievements. With gratitude for life, I will build genuine friendships and grow together with those around me."
+    },
+    "gallery": [
+        {
+            "image": "headshots/joel-tie.jpg",
+            "category": "Academics",
+            "title": "Academics",
+            "description": "Building a strong academic foundation through rigorous coursework and deep learning, developing the knowledge and critical thinking skills needed to tackle complex real-world challenges and make a meaningful impact."
+        },
+        {
+            "image": "research/robot-arm.png",
+            "category": "Research",
+            "title": "Neural Network Verification",
+            "description": "Researching the verifiability of neural networks in control systems using Verisig, a formal verification tool, to ensure safety and reliability of AI-driven control systems in critical applications."
+        },
+        {
+            "image": "research/shubble.png",
+            "category": "Open Source",
+            "title": "Shubble",
+            "description": "Developing a comprehensive shuttle tracking and resource allocation system for the RPI campus with the Rensselaer Center for Open Source, providing real-time shuttle locations and optimized route planning."
+        },
+        {
+            "image": "groups/rpi_tennis_2023_2024.jpeg",
+            "category": "Tennis",
+            "title": "RPI Men's Tennis",
+            "description": "Competing as a member of the Division III tennis team, defending champions and ranked #9 nationally, representing RPI in competitive collegiate athletics with dedication and team spirit."
+        },
+        {
+            "image": "groups/rpisec_group.jpg",
+            "category": "Cybersecurity",
+            "title": "RPISEC",
+            "description": "Serving as Secretary of the RPI cybersecurity club, participating in CTF competitions, conferences, and workshops to advance security skills and contribute to the cybersecurity community."
+        },
+        {
+            "image": "logo.png",
+            "category": "Consulting",
+            "title": "McCandless Consulting",
+            "description": "Leading a consulting firm that applies software and IT solutions to modernize systems, specializing in real-time tracking and optimization to help organizations operate more efficiently."
+        }
+    ],
+    "quotes_intro": "I love finding the bits of catchy wisdom contained in quotes."
 }
