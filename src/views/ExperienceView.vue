@@ -241,11 +241,35 @@ const experiences = computed(() => {
 
 @media (max-width: 768px) {
   .timeline {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .timeline::before {
+    left: 0.25rem;
   }
 
   .experience-card {
     padding: 1.5rem;
+  }
+
+  .experience-card::before {
+    left: -1.25rem;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 0 2px var(--gray-300);
+  }
+
+  .experience-card.current::before {
+    box-shadow: 0 0 0 2px var(--accent), 0 0 0 4px rgba(245, 158, 11, 0.2);
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      box-shadow: 0 0 0 2px var(--accent), 0 0 0 4px rgba(245, 158, 11, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 0 2px var(--accent), 0 0 0 6px rgba(245, 158, 11, 0.1);
+    }
   }
 
   .card-header {

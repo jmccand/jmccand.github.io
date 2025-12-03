@@ -1,22 +1,56 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { ref } from 'vue'
 const baseUrl = import.meta.env.BASE_URL;
+const mobileMenuOpen = ref(false);
+
+const toggleMobileMenu = () => {
+  mobileMenuOpen.value = !mobileMenuOpen.value;
+};
+
+const closeMobileMenu = () => {
+  mobileMenuOpen.value = false;
+};
 </script>
 
 <template>
   <header>
-    <RouterLink to="/">
+    <RouterLink to="/" @click="closeMobileMenu">
       <div class="flex-row nametag">
         <img alt="Joel McCandless Logo" class="logo" src="@/assets/logo.png" height="40px"/>
         <h1>Joel McCandless</h1>
       </div>
     </RouterLink>
-    <nav>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/experience">Experience</RouterLink>
       <RouterLink to="/projects">Projects</RouterLink>
       <RouterLink to="/groups">Groups</RouterLink>
       <RouterLink to="/blog">Blog</RouterLink>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-button" @click="toggleMobileMenu" aria-label="Toggle menu">
+      <svg v-if="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+      <svg v-else xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <!-- Mobile Navigation Dropdown -->
+    <nav class="mobile-nav" :class="{ 'mobile-nav-open': mobileMenuOpen }">
+      <RouterLink to="/" @click="closeMobileMenu">Home</RouterLink>
+      <RouterLink to="/experience" @click="closeMobileMenu">Experience</RouterLink>
+      <RouterLink to="/projects" @click="closeMobileMenu">Projects</RouterLink>
+      <RouterLink to="/groups" @click="closeMobileMenu">Groups</RouterLink>
+      <RouterLink to="/blog" @click="closeMobileMenu">Blog</RouterLink>
     </nav>
   </header>
 
@@ -94,14 +128,15 @@ h1 {
   transform: scale(1.05);
 }
 
-nav {
+/* Desktop Navigation */
+.desktop-nav {
   font-size: 1.1rem;
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
 
-nav a {
+.desktop-nav a {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 500;
@@ -110,14 +145,113 @@ nav a {
   transition: all 0.3s ease;
 }
 
-nav a:hover {
+.desktop-nav a:hover {
   background-color: var(--gray-100);
   color: var(--primary);
 }
 
-nav a.router-link-exact-active {
+.desktop-nav a.router-link-exact-active {
   background-color: var(--primary);
   color: white;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-heading);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-button:hover {
+  background-color: var(--gray-100);
+  color: var(--primary);
+}
+
+/* Mobile Navigation Dropdown */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  background: white;
+  border-bottom: 2px solid var(--gray-200);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.mobile-nav.mobile-nav-open {
+  max-height: 400px;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--gray-200);
+  transition: all 0.3s ease;
+}
+
+.mobile-nav a:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav a:hover {
+  background-color: var(--gray-100);
+  color: var(--primary);
+}
+
+.mobile-nav a.router-link-exact-active {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .icons {
+    order: 1;
+  }
+
+  footer p {
+    order: 2;
+    text-align: center;
+  }
 }
 
 .content {
