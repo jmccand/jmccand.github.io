@@ -2,6 +2,7 @@
 // This approach allows us to keep image paths in JSON while working with Vite's static imports
 
 // Headshots
+import joelPark from '@/assets/images/headshots/joel-park.jpg';
 import joelPolo from '@/assets/images/headshots/joel-polo.jpg';
 import joelTie from '@/assets/images/headshots/joel-tie.jpg';
 
@@ -23,6 +24,7 @@ import rpiLogo from '@/assets/images/rpi-logo.png';
 
 // Create a mapping from path strings to imported modules
 const imageRegistry = {
+  'headshots/joel-park.jpg': joelPark,
   'headshots/joel-polo.jpg': joelPolo,
   'headshots/joel-tie.jpg': joelTie,
   'research/cartpole.png': cartpole,
