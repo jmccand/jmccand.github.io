@@ -42,7 +42,7 @@ const filteredProjects = computed(() => {
 
   if (selectedCategory.value === 'all') {
     filtered = projects.value;
-  } else if (selectedCategory.value === 'software') {
+  } else if (selectedCategory.value === 'Software') {
     filtered = projects.value.filter(p => p.software === true);
   } else {
     filtered = projects.value.filter(p => p.category === selectedCategory.value);
