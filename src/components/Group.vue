@@ -26,7 +26,7 @@ const getImageUrl = (imageName) => {
                     <svg v-if="imageIndex > 0" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 256 256" @click="imageIndex--"><path fill="#aaa" d="M168.49 199.51a12 12 0 0 1-17 17l-80-80a12 12 0 0 1 0-17l80-80a12 12 0 0 1 17 17L97 128Z"></path></svg>
                 </div>
                 <div class="image-caption">
-                    <img :src="getImageUrl(groupLine.images[imageIndex][0])" alt="Group Image" class="group-image"/>
+                    <img :src="getImageUrl(groupLine.images[imageIndex][0])" alt="Group Image" class="group-image" loading="lazy"/>
                     <div class="caption">
                         {{ groupLine.images[imageIndex][1] }}
                     </div>

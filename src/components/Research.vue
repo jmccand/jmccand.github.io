@@ -21,7 +21,7 @@ const getImageUrl = (imageName) => {
                     {{ researchLine.source }}
                 </div>
             </div>
-            <img :src="getImageUrl(researchLine.images[0])" alt="research Image" class="research-image"/>
+            <img :src="getImageUrl(researchLine.images[0])" alt="research Image" class="research-image" loading="lazy"/>
             <div class="links">
                 <a v-for="link in researchLine.more" :href="link[1]" :key="link[0]" target="_blank">{{ link[0] }}</a>
             </div>

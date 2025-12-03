@@ -28,7 +28,7 @@ const experiences = computed(() => {
       >
         <div class="card-header">
           <div class="logo-container">
-            <img :src="exp.logo" :alt="exp.company" />
+            <img :src="exp.logo" :alt="exp.company" loading="lazy" />
           </div>
           <div class="header-info">
             <h2>{{ exp.position }}</h2>

@@ -65,7 +65,7 @@ const prevPhoto = () => {
 
         <div class="showcase-content">
           <div class="showcase-image">
-            <img :src="galleryPhotos[currentPhotoIndex].src" :alt="galleryPhotos[currentPhotoIndex].title" />
+            <img :src="galleryPhotos[currentPhotoIndex].src" :alt="galleryPhotos[currentPhotoIndex].title" loading="lazy" />
           </div>
           <div class="showcase-details">
             <span class="showcase-category">{{ galleryPhotos[currentPhotoIndex].category }}</span>
