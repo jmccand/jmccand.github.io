@@ -14,9 +14,43 @@ const categories = computed(() => {
   return Array.from(cats);
 });
 
+// Helper function to parse date strings (handles "NOW", "M/YY", etc.)
+const parseEndDate = (dateStr) => {
+  if (!dateStr) return new Date(0); // Very old date if missing
+  if (dateStr === 'NOW') return new Date(); // Current date
+
+  // Parse M/YY or MM/YY format
+  const parts = dateStr.split('/');
+  if (parts.length === 2) {
+    const month = parseInt(parts[0]);
+    const year = 2000 + parseInt(parts[1]); // Convert YY to YYYY
+    return new Date(year, month - 1); // Month is 0-indexed
+  }
+
+  return new Date(0); // Default to very old if can't parse
+};
+
+// Helper to get the most recent end date from a project's versions
+const getMostRecentEndDate = (project) => {
+  if (!project.versions || project.versions.length === 0) {
+    return new Date(0);
+  }
+
+  const dates = project.versions.map(v => parseEndDate(v.end));
+  return new Date(Math.max(...dates));
+};
+
 const filteredProjects = computed(() => {
-  if (selectedCategory.value === 'all') return projects.value;
-  return projects.value.filter(p => p.category === selectedCategory.value);
+  let filtered = selectedCategory.value === 'all'
+    ? projects.value
+    : projects.value.filter(p => p.category === selectedCategory.value);
+
+  // Sort by most recent end date (newest first)
+  return filtered.slice().sort((a, b) => {
+    const dateA = getMostRecentEndDate(a);
+    const dateB = getMostRecentEndDate(b);
+    return dateB - dateA; // Descending order (newest first)
+  });
 });
 </script>
 
