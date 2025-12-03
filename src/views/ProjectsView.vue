@@ -7,10 +7,7 @@ const projects = ref(projectsData);
 const selectedCategory = ref('all');
 
 const categories = computed(() => {
-  const cats = new Set(['all']);
-  projects.value.forEach(project => {
-    if (project.category) cats.add(project.category);
-  });
+  const cats = new Set(['all', 'software', 'Open Source', 'Research']);
   return Array.from(cats);
 });
 
@@ -41,9 +38,15 @@ const getMostRecentEndDate = (project) => {
 };
 
 const filteredProjects = computed(() => {
-  let filtered = selectedCategory.value === 'all'
-    ? projects.value
-    : projects.value.filter(p => p.category === selectedCategory.value);
+  let filtered;
+
+  if (selectedCategory.value === 'all') {
+    filtered = projects.value;
+  } else if (selectedCategory.value === 'software') {
+    filtered = projects.value.filter(p => p.software === true);
+  } else {
+    filtered = projects.value.filter(p => p.category === selectedCategory.value);
+  }
 
   // Sort by most recent end date (newest first)
   return filtered.slice().sort((a, b) => {
@@ -69,7 +72,7 @@ const filteredProjects = computed(() => {
         class="filter-btn"
         :class="{ active: selectedCategory === cat }"
       >
-        {{ cat === 'all' ? 'All Projects' : cat }}
+        {{ cat === 'all' ? 'All Projects' : cat === 'software' ? 'Software' : cat }}
       </button>
     </div>
 
