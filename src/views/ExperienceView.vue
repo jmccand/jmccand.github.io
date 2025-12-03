@@ -1,43 +1,15 @@
 <script setup>
 import { getImage } from '@/utils/imageRegistry';
+import experiencesData from '@/assets/data/experiences.json';
+import { computed } from 'vue';
 
-const experiences = [
-  {
-    company: 'MITRE Corporation',
-    logo: getImage('experience/mitre-logo.png'),
-    position: 'Intern',
-    team: 'Communications, Signal Intelligence, and Position, Navigation and Timing',
-    period: 'Present',
-    current: true,
-    description: 'Working on advanced communications and signal intelligence systems, contributing to national security missions and technical innovation.',
-    skills: ['Signal Processing', 'Communications Systems', 'Research & Development']
-  },
-  {
-    company: 'McCandless Consulting',
-    logo: getImage('logo.png'),
-    position: 'Founder',
-    period: '2024 - Present',
-    description: 'Applying software and IT solutions to modernize shuttle tracking and resource allocation. Developed comprehensive systems for real-time tracking and optimization.',
-    skills: ['Full-Stack Development', 'System Architecture', 'Consulting']
-  },
-  {
-    company: 'XP Health',
-    logo: getImage('experience/xphealth-logo.png'),
-    position: 'Software Engineering Intern',
-    period: '2023',
-    description: 'Built a full stack framework to integrate barcode scanners into daily operations, streamlining inventory management and improving operational efficiency.',
-    skills: ['Full-Stack Development', 'Hardware Integration', 'Framework Design']
-  },
-  {
-    company: 'Rensselaer Polytechnic Institute',
-    logo: getImage('rpi-logo.png'),
-    position: 'Researcher',
-    department: 'ECSE Department',
-    period: '2024',
-    description: 'Implemented a multivariate leader-follower controller to coordinate transportation of heavy loads, advancing research in collaborative robotics.',
-    skills: ['Robotics', 'Control Systems', 'Research']
-  }
-];
+// Process experiences with imported images from registry
+const experiences = computed(() => {
+  return experiencesData.map(exp => ({
+    ...exp,
+    logo: getImage(exp.logo)
+  }));
+});
 </script>
 
 <template>
