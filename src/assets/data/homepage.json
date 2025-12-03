@@ -14,7 +14,7 @@
             "description": "Building a strong academic foundation through rigorous coursework and deep learning, developing the knowledge and critical thinking skills needed to tackle complex real-world challenges and make a meaningful impact."
         },
         {
-            "image": "research/robot-arm.png",
+            "image": "research/cartpole.png",
             "category": "Research",
             "title": "Neural Network Verification",
             "description": "Researching the verifiability of neural networks in control systems using Verisig, a formal verification tool, to ensure safety and reliability of AI-driven control systems in critical applications."

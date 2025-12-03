@@ -291,5 +291,22 @@
 				"more" : [["GitHub", "https://github.com/Bram-Hub/NanoNav"], ["Docs", "https://bram-hub.github.io/NanoNav/"]]
 			}
 		]
+	},
+	{
+		"name" : "Neural Network Verification for Control Systems",
+		"category": "Research",
+		"software": true,
+		"source": "RPI CS Department, School of Engineering",
+		"versions" : [
+			{
+				"start" : "9/25",
+				"end" : "NOW",
+				"goal" : "Verify safety and reliability of neural network controllers in critical systems!",
+				"details" : "Research focused on formal verification of neural networks used in control systems. Using Verisig, a formal verification tool, this work explores methods to demonstrate that neural network controllers will behave correctly under all possible conditions. This research addresses the fundamental challenge of deploying AI systems in environments where failures could have serious consequences, such as autonomous vehicles, medical devices, and industrial automation.",
+				"images" : ["cartpole.png"],
+				"tags" : ["formal verification", "neural networks", "control systems", "safety-critical AI"],
+				"more" : []
+			}
+		]
 	}
 ]
