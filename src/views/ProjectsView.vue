@@ -7,7 +7,7 @@ const projects = ref(projectsData);
 const selectedCategory = ref('all');
 
 const categories = computed(() => {
-  const cats = new Set(['all', 'software', 'Open Source', 'Research']);
+  const cats = new Set(['all', 'Software', 'Open Source', 'Research']);
   return Array.from(cats);
 });
 
@@ -72,7 +72,7 @@ const filteredProjects = computed(() => {
         class="filter-btn"
         :class="{ active: selectedCategory === cat }"
       >
-        {{ cat === 'all' ? 'All Projects' : cat === 'software' ? 'Software' : cat }}
+        {{ cat === 'all' ? 'All Projects' : cat }}
       </button>
     </div>
 
