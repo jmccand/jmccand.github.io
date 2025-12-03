@@ -24,10 +24,18 @@
 		"more": [["My Profile", "https://rpiathletics.com/sports/mens-tennis/roster/joel-mccandless/19041"], ["Our Record", "https://rpiathletics.com/sports/mens-tennis/schedule"]]
     },
 	{
+		"name": "HackRPI Hackathon Team: Recollect",
+		"start": "1/25",
+		"end": "1/25",
+		"details": "HackRPI is RPI's annual hackathon. In 2025, my team developed Recollect, an intelligent document search tool designed to make archived image data accessible and searchable. Users select a directory containing scanned documents, and Recollect automatically builds a comprehensive search index using Optical Character Recognition (OCR) and multimodal embeddings. This approach captures both text content and visual context from document images. Once indexed, users can perform natural language text searches across their entire archive. Recollect enhances search results with AI-powered summaries generated through Retrieval Augmented Generation (RAG), providing quick insights without requiring users to review every matching document.",
+		"images": [["recollect.jpg", "My team (from left to right: Erik, Aiden, and I) presenting and answering questions about Recollect at HackRPI 2025."]],
+		"more": []
+	},
+	{
 		"name": "HackRPI Hackathon Team: Able",
 		"start": "11/24",
 		"end": "11/24",
-		"details": "HackRPI is RPI's annual hackathon. In 2024, my team developed Able, a website that enhances Google Maps for the visually impaired. Extending Google's audial support, Able enables users to record comments and listen to others' comments in their authentic voices, thus preserving the identity of the visually impaired. Able won the \"Best Accessibility Hack\" in 2024.",
+		"details": "HackRPI is RPI's annual hackathon. In 2024, my team developed Able, an accessibility-focused web application that extends Google Maps for visually impaired users. Building upon Google's existing audio support, Able introduces a social layer where users can record and share location-based comments in their own voices. This preserves the identity and authentic experiences of visually impaired individuals, creating a richer, more personal navigation experience. Users can discover insights, warnings, and tips from the community while navigating their surroundings. Able earned the \"Best Accessibility Hack\" award at HackRPI 2024.",
 		"images": [["able.jpeg", "My partner, Erik, and I with the certificate and check for winning."]],
 		"more": []
 	},

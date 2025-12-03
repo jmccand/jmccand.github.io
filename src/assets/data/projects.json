@@ -308,5 +308,39 @@
 				"more" : []
 			}
 		]
+	},
+	{
+		"name" : "Able",
+		"category": "Hackathon",
+		"software": true,
+		"source": "HackRPI 2024",
+		"versions" : [
+			{
+				"start" : "11/24",
+				"end" : "11/24",
+				"goal" : "Enhance Google Maps accessibility for the visually impaired with authentic voice comments!",
+				"details" : "Able is an accessibility-focused web application that extends Google Maps for visually impaired users. Building upon Google's existing audio support, Able introduces a social layer where users can record and share location-based comments in their own voices. This preserves the identity and authentic experiences of visually impaired individuals, creating a richer, more personal navigation experience. Users can discover insights, warnings, and tips from the community while navigating their surroundings. The project earned the \"Best Accessibility Hack\" award at HackRPI 2024, recognizing its innovative approach to inclusive technology design.",
+				"images" : ["able.png"],
+				"tags" : ["accessibility", "web app", "voice technology", "Google Maps API", "social features"],
+				"more" : []
+			}
+		]
+	},
+	{
+		"name" : "Recollect",
+		"category": "Hackathon",
+		"software": true,
+		"source": "HackRPI 2025",
+		"versions" : [
+			{
+				"start" : "1/25",
+				"end" : "1/25",
+				"goal" : "Search archived documents using AI-powered OCR and multimodal embeddings!",
+				"details" : "Recollect is an intelligent document search tool designed to make archived image data accessible and searchable. Users select a directory containing scanned documents, and Recollect automatically builds a comprehensive search index using Optical Character Recognition (OCR) and multimodal embeddings. This approach captures both text content and visual context from document images. Once indexed, users can perform natural language text searches across their entire archive. Recollect enhances search results with AI-powered summaries generated through Retrieval Augmented Generation (RAG), providing quick insights without requiring users to review every matching document. This tool transforms static document archives into dynamic, queryable knowledge bases.",
+				"images" : ["recollect.png"],
+				"tags" : ["OCR", "machine learning", "RAG", "document search", "multimodal AI", "embeddings"],
+				"more" : []
+			}
+		]
 	}
 ]
