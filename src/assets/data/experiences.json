@@ -1,5 +1,15 @@
 [
   {
+    "company": "Rensselaer Polytechnic Institute",
+    "logo": "rpi-logo.png",
+    "position": "Masters Researcher",
+    "department": "Neural Network Verification",
+    "period": "2024 - Present",
+    "current": true,
+    "description": "Utilized Verisig to interpret Neural Networks as hybrid systems with guaranteed output ranges. Implemented an adaptive control strategy ensuring reliability under system fault conditions.",
+    "skills": ["Neural Network Verification", "Formal Methods", "Control Systems", "Verisig", "Adaptive Control"]
+  },
+  {
     "company": "McCandless Consulting",
     "logo": "logo.png",
     "position": "Founder",
