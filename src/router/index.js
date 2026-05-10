@@ -12,32 +12,40 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+      meta: { title: 'Home' },
     },
     {
       path: '/experience',
       name: 'experience',
       component: ExperienceView,
+      meta: { title: 'Experience' },
     },
     {
       path: '/projects',
       name: 'projects',
       component: ProjectsView,
+      meta: { title: 'Projects' },
     },
     {
       path: '/groups',
       name: 'groups',
       component: GroupsView,
+      meta: { title: 'Groups' },
     },
     {
       path: '/blog',
       name: 'blog',
       component: BlogView,
+      meta: { title: 'Blog' },
     },
   ],
   scrollBehavior(to, from, savedPosition) {
-    // always scroll to top
     return { top: 0, behavior: 'auto' };
   }
+})
+
+router.afterEach((to) => {
+  document.title = to.meta.title ? `${to.meta.title} | Joel McCandless` : 'Joel McCandless'
 })
 
 export default router

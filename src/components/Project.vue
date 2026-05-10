@@ -30,7 +30,7 @@ const getImageUrl = (imageName) => {
                 </p>
                 <p v-if="isExpanded">{{ projectLine.versions[0].details }}</p>
                 <div class="links" :class="{ expanded: isExpanded }">
-                    <a v-for="link in projectLine.versions[0].more" :href="link[1]" :key="link[0]" target="_blank">{{ link[0] }}</a>
+                    <a v-for="link in projectLine.versions[0].more" :href="link[1]" :key="link[0]" target="_blank" rel="noopener noreferrer" @click.stop>{{ link[0] }}</a>
                 </div>
             </div>
             <img :src="getImageUrl(projectLine.versions[0].images[0])" alt="Project Image" class="project-image" :class="{ expanded: isExpanded }" loading="lazy"/>
@@ -46,7 +46,7 @@ const getImageUrl = (imageName) => {
                     <span class='version'>{{ `v${projectLine.versions.length - index - 1}` }}</span>
                     <p>
                         {{ isExpanded ? project.details : '' }}
-                        Links: <a v-for="link in project.more" :href="link[1]" :key="link[0]" target="_blank" class="earlier-link">{{ link[0] }}</a>
+                        Links: <a v-for="link in project.more" :href="link[1]" :key="link[0]" target="_blank" rel="noopener noreferrer" class="earlier-link" @click.stop>{{ link[0] }}</a>
                     </p>
                 </div>
             </div>

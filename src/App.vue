@@ -28,7 +28,6 @@ const closeMobileMenu = () => {
       <RouterLink to="/experience">Experience</RouterLink>
       <RouterLink to="/projects">Projects</RouterLink>
       <RouterLink to="/groups">Groups</RouterLink>
-      <RouterLink to="/blog">Blog</RouterLink>
     </nav>
 
     <!-- Mobile Menu Button -->
@@ -50,7 +49,6 @@ const closeMobileMenu = () => {
       <RouterLink to="/experience" @click="closeMobileMenu">Experience</RouterLink>
       <RouterLink to="/projects" @click="closeMobileMenu">Projects</RouterLink>
       <RouterLink to="/groups" @click="closeMobileMenu">Groups</RouterLink>
-      <RouterLink to="/blog" @click="closeMobileMenu">Blog</RouterLink>
     </nav>
   </header>
 

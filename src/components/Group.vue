@@ -39,7 +39,7 @@ const getImageUrl = (imageName) => {
                 {{ groupLine.details }}
             </div>
             <div class="links">
-                <a v-for="link in groupLine.more" :href="link[1]" :key="link[0]" target="_blank">{{ link[0] }}</a>
+                <a v-for="link in groupLine.more" :href="link[1]" :key="link[0]" target="_blank" rel="noopener noreferrer">{{ link[0] }}</a>
             </div>
         </div>
     </div>

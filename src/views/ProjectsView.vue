@@ -7,8 +7,8 @@ const projects = ref(projectsData);
 const selectedCategory = ref('all');
 
 const categories = computed(() => {
-  const cats = new Set(['all', 'Software', 'Open Source', 'Research']);
-  return Array.from(cats);
+  const cats = new Set(projects.value.map(p => p.category));
+  return ['all', ...Array.from(cats).sort()];
 });
 
 // Helper function to parse date strings (handles "NOW", "M/YY", etc.)
