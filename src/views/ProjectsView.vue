@@ -7,8 +7,12 @@ const projects = ref(projectsData);
 const selectedCategory = ref('all');
 
 const categories = computed(() => {
-  const cats = new Set(projects.value.flatMap(p => p.category));
-  return ['all', ...Array.from(cats).sort()];
+  const counts = {};
+  projects.value.flatMap(p => p.category).forEach(cat => {
+    counts[cat] = (counts[cat] || 0) + 1;
+  });
+  const cats = Object.keys(counts).filter(cat => counts[cat] >= 2).sort();
+  return ['all', ...cats];
 });
 
 // Helper function to parse date strings (handles "NOW", "M/YY", etc.)
