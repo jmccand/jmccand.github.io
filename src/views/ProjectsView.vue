@@ -7,7 +7,7 @@ const projects = ref(projectsData);
 const selectedCategory = ref('all');
 
 const categories = computed(() => {
-  const cats = new Set(projects.value.map(p => p.category));
+  const cats = new Set(projects.value.flatMap(p => p.category));
   return ['all', ...Array.from(cats).sort()];
 });
 
@@ -42,10 +42,8 @@ const filteredProjects = computed(() => {
 
   if (selectedCategory.value === 'all') {
     filtered = projects.value;
-  } else if (selectedCategory.value === 'Software') {
-    filtered = projects.value.filter(p => p.software === true);
   } else {
-    filtered = projects.value.filter(p => p.category === selectedCategory.value);
+    filtered = projects.value.filter(p => p.category.includes(selectedCategory.value));
   }
 
   // Sort by most recent end date (newest first)

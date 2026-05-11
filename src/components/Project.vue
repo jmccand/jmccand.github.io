@@ -14,8 +14,7 @@ const toggleExpand = () => {
     isExpanded.value = !isExpanded.value;
 };
 const getImageUrl = (imageName) => {
-  // Check if this is a research project
-  const folder = projectLine.category === 'Research' ? 'research' : 'projects';
+  const folder = projectLine.category.includes('Research') ? 'research' : 'projects';
   return new URL(`../assets/images/${folder}/${imageName}`, import.meta.url).href
 }
 </script>

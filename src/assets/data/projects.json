@@ -1,8 +1,7 @@
 [
 	{
 		"name" : "Personal Website",
-		"category": "Software",
-		"software": true,
+		"category": ["Software"],
 		"versions" : [
 			{
 				"start" : "2/25",
@@ -26,8 +25,7 @@
 	},
 	{
 		"name" : "CourseMap",
-		"category": "Software",
-		"software": true,
+		"category": ["Software"],
 		"versions" : [
 			{
 				"start" : "1/24",
@@ -51,8 +49,7 @@
 	},
 	{
 		"name" : "Cognitive Robotics for Education",
-		"category": "Robotics",
-		"software": true,
+		"category": ["Robotics", "Software"],
 		"versions" : [
 			{
 				"start" : "11/23",
@@ -67,8 +64,7 @@
 	},
 	{
 		"name" : "Custom Tennis Shock Absorbers",
-		"category": "3D Printing",
-		"software": false,
+		"category": ["3D Printing"],
 		"versions" : [
 			{
 				"start" : "8/24",
@@ -83,8 +79,7 @@
 	},
 	{
 		"name" : "9x9 Tic Tac Toe AI Player",
-		"category": "Software",
-		"software": true,
+		"category": ["Software"],
 		"versions" : [
 			{
 				"start" : "6/22",
@@ -99,8 +94,7 @@
 	},
 	{
 		"name" : "UpDownLHS",
-		"category": "Software",
-		"software": true,
+		"category": ["Software"],
 		"versions" : [
 			{
 				"start" : "11/21",
@@ -115,8 +109,7 @@
 	},
 	{
 		"name" : "Chest Protector for Joey",
-		"category": "3D Printing",
-		"software": false,
+		"category": ["3D Printing"],
 		"versions" : [
 			{
 				"start" : "7/22",
@@ -131,8 +124,7 @@
 	},
 	{
 		"name" : "Personalized Gifts",
-		"category": "Fabrication",
-		"software": false,
+		"category": ["Fabrication"],
 		"versions" : [
 			{
 				"start" : "6/22",
@@ -147,8 +139,7 @@
 	},
 	{
 		"name" : "Cryptographic Substitution Cipher Solver",
-		"category": "Software",
-		"software": true,
+		"category": ["Software"],
 		"versions" : [
 			{
 				"start" : "1/21",
@@ -163,8 +154,7 @@
 	},
 	{
 		"name" : "3D Printed Watch Band",
-		"category": "3D Printing",
-		"software": false,
+		"category": ["3D Printing"],
 		"versions" : [
 			{
 				"start" : "5/20",
@@ -179,8 +169,7 @@
 	},
 	{
 		"name" : "Card Covers for One Night Ultimate Werewolf",
-		"category": "3D Printing",
-		"software": false,
+		"category": ["3D Printing"],
 		"versions" : [
 			{
 				"start" : "3/20",
@@ -195,8 +184,7 @@
 	},
 	{
 		"name" : "Candy Clawbot",
-		"category": "Robotics",
-		"software": true,
+		"category": ["Robotics", "Software"],
 		"versions" : [
 			{
 				"start" : "7/18",
@@ -211,8 +199,7 @@
 	},
 	{
 		"name" : "OneTesla Tesla Coil Kit",
-		"category": "Electronics",
-		"software": false,
+		"category": ["Electronics"],
 		"versions" : [
 			{
 				"start" : "5/16",
@@ -227,8 +214,7 @@
 	},
 	{
 		"name" : "OpenROV Submarine",
-		"category": "Robotics",
-		"software": true,
+		"category": ["Robotics", "Software"],
 		"versions" : [
 			{
 				"start" : "5/15",
@@ -243,8 +229,7 @@
 	},
 	{
 		"name" : "Shubble",
-		"category": "Open Source",
-		"software": true,
+		"category": ["Open Source", "Software"],
 		"source": "Rensselaer Center for Open Source",
 		"versions" : [
 			{
@@ -260,8 +245,7 @@
 	},
 	{
 		"name" : "Robot Leader-Follower Control",
-		"category": "Research",
-		"software": true,
+		"category": ["Research", "Software"],
 		"source": "RPI ECSE Department, School of Engineering",
 		"versions" : [
 			{
@@ -277,8 +261,7 @@
 	},
 	{
 		"name" : "MinSeg Arduino Kit",
-		"category": "Research",
-		"software": true,
+		"category": ["Research", "Software"],
 		"source": "RPI Cognitive Science Department, School of HASS",
 		"versions" : [
 			{
@@ -294,8 +277,7 @@
 	},
 	{
 		"name" : "Neural Network Verification for Control Systems",
-		"category": "Research",
-		"software": true,
+		"category": ["Research", "Software"],
 		"source": "RPI CS Department, School of Engineering",
 		"versions" : [
 			{
@@ -311,8 +293,7 @@
 	},
 	{
 		"name" : "Able",
-		"category": "Hackathon",
-		"software": true,
+		"category": ["Hackathon", "Software"],
 		"source": "HackRPI 2024",
 		"versions" : [
 			{
@@ -328,8 +309,7 @@
 	},
 	{
 		"name" : "Recollect",
-		"category": "Hackathon",
-		"software": true,
+		"category": ["Hackathon", "Software"],
 		"source": "HackRPI 2025",
 		"versions" : [
 			{
