@@ -105,7 +105,8 @@ const experiences = computed(() => {
 .experience-card::before {
   content: '';
   position: absolute;
-  left: -2.5rem;
+  left: calc(-2rem + 1.5px);
+  transform: translateX(-50%);
   top: 2rem;
   width: 12px;
   height: 12px;
@@ -253,7 +254,7 @@ const experiences = computed(() => {
   }
 
   .experience-card::before {
-    left: -1.25rem;
+    left: calc(-1rem + 0.25rem + 1.5px);
     width: 10px;
     height: 10px;
     box-shadow: 0 0 0 2px var(--gray-300);
